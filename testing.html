@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Toggle Filter</title>
+
+  <style>
+    /* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #444;
+  text-align: center;
+}
+
+p {
+  margin-top: -10px;
+  text-align: center;
+  color: #777;
+}
+
+/* Menu Filter Buttons */
+.menu-filter {
+  margin: 20px 0;
+  position: sticky;
+  top: 0;
+  background: #f9f9f9;
+  z-index: 10;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid #ffa500;
+  background: transparent;
+  color: #ffa500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+/* Menu Items */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.menu-items.loaded {
+  opacity: 1;
+}
+
+.menu-item {
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  opacity: 0;
+  transform: scale(0.9);
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item.visible {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Buttons Styling */
+.book-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.buy-btn {
+  background-color: #007bff;
+}
+
+.details-btn {
+  background-color: #28a745;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+.details-btn:hover {
+  background-color: #218838;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Book Store</h1>
+    <p>Select a category to explore</p>
+  </header>
+  
+  <section class="menu">
+    <div class="menu-filter">
+      <button data-category="all" class="filter-btn active" onclick="filterItems('all')">All</button>
+      <button data-category="secondary-school" class="filter-btn" onclick="filterItems('secondary-school')">Secondary School</button>
+      <button data-category="primary-school" class="filter-btn" onclick="filterItems('primary-school')">Primary School</button>
+      <button data-category="literatures" class="filter-btn" onclick="filterItems('literatures')">Literatures</button>
+      <button data-category="christian-books" class="filter-btn" onclick="filterItems('christian-books')">Christian Books</button>
+      <button data-category="stationeries" class="filter-btn" onclick="filterItems('stationeries')">Stationeries</button>
+      <button data-category="others" class="filter-btn" onclick="filterItems('others')">Others</button>
+    </div>
+  </section>
+
+  <section class="book-section">
+    <div class="menu-items">
+      <div class="menu-item secondary-school">
+        <div class="book-card">
+          <img src="./images/Books/P_25_pillars.jpg" alt="Secondary Book 1">
+          <h3>Secondary Book 1</h3>
+          <p>#1000</p>
+          <div class="book-buttons">
+            <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-item christian-books">
+        <div class="book-card">
+          <img src="./images/Books/P_Goals.jpg" alt="Christian Book">
+          <h3>The Power of Faith</h3>
+          <p>#2000</p>
+          <div class="book-buttons">
+            <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more items as needed, each with appropriate data-category -->
+    </div>
+  </section>
+
+  <script>
+    function filterItems(category) {
+      const items = document.querySelectorAll('.menu-item');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`[data-category="${category}"]`).classList.add('active');
+
+      if (category === 'all') {
+        items.forEach(item => {
+          item.classList.add('visible');
+        });
+      } else {
+        items.forEach(item => {
+          item.classList.remove('visible');
+          if (item.classList.contains(category)) {
+            item.classList.add('visible');
+          }
+        });
+      }
+    }
+
+    function redirectToWhatsApp() {
+      window.location.href = 'https://wa.me/1234567890';
+    }
+
+    window.onload = () => {
+      document.querySelector('.menu-items').classList.add('loaded');
+      document.querySelectorAll('.menu-item').forEach(item => {
+        item.classList.add('visible');
+      });
+    };
+  </script>
+
+
+
+</body>
+</html>

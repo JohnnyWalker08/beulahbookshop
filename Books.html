@@ -1,0 +1,2137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beulah Bookshop - Books Site</title>
+	    <!-- SEO -->
+		<meta name="description" content="Welcome to Beulah Bookshop, your go-to destination for all educational supplies, including textbooks, notebooks, and stationery. Shop now to fuel your learning and creativity.">
+		<meta name="description" content="Get in touch with Beulah Bookshop for inquiries about our products, services, or orders. Visit our store or contact us online.">
+		<meta name="keywords" content="Beulah Bookshop contact, bookstore contact, stationery inquiries, textbook shop">    
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Beulah Bookshop">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta name="description" content="Explore our extensive collection of school textbooks, storybooks, and educational resources. Beulah Bookshop has everything you need for learning.">
+		<meta name="keywords" content="school textbooks, storybooks, educational books, bookstore, buy books online">
+		<meta name="description" content="Discover insightful articles, tips, and guides on education, stationery, and productivity on the Beulah Bookshop blog. Stay informed and inspired!">
+		<meta name="keywords" content="education tips, stationery blog, productivity hacks, learning tips">
+		<meta name="description" content="{{Post Excerpt}}">
+		<meta name="keywords" content="{{Keywords Related to Post}}">
+		<meta name="description" content="Learn more about Beulah Bookshop, our mission, and our dedication to providing quality educational supplies for students and professionals.">
+		<meta name="keywords" content="about Beulah Bookshop, our mission, educational supplies, bookstore history">
+		
+		  
+	
+		<!-- Open Graph Meta Tags for Social Media -->
+		<meta property="og:title" content="Beulah Bookshop - Your Trusted Partner for Textbooks and Stationery">
+		<meta property="og:description" content="Find a wide range of school textbooks, notebooks, and stationery supplies to fuel your learning and creativity.">
+		<meta property="og:image" content="https://example.com/your-hero-image.jpg">
+		<meta property="og:url" content="https://github.com/JohnnyWalker08/Beulah_Bookshop">
+		<meta property="og:type" content="website">
+	
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Beulah Bookshop">
+		<meta name="twitter:description" content="Your one-stop shop for textbooks, notebooks, and stationery.">
+		<meta name="twitter:image" content="https://example.com/your-hero-image.jpg">
+	
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://github.com/JohnnyWalker08/Beulah_Bookshop">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+	
+	<style type="text/css">
+	body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+
+	
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #444;
+  }
+  
+  p {
+    margin-top: -10px;
+    color: #777;
+  }
+  
+  /* Menu Filter Buttons */
+  .menu-filter {
+    margin: 20px 0;
+    position: sticky;
+    top: 0;
+    background: #f9f9f9;
+    z-index: 10;
+    padding: 10px 0;
+  }
+  
+  .filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #ffa500;
+    background: transparent;
+    color: #ffa500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .filter-btn.active, .filter-btn:hover {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  /* Menu Items */
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .menu-items.loaded {
+    opacity: 1;
+  }
+  
+  .menu-item 
+   /* Point where i was able to set th bpok card welll, when you hover on it, it will zoom instead of following both instructions set before */
+  
+  .menu-item.visible {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .menu-item p {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-10px);
+  }
+  
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .menu-item {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .filter-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .filter-btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Section Styling */
+.book-section {
+    width: 90%; /* Allow flexibility for smaller screens */
+    margin: 0 auto; /* Center the section */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Book Container */
+.book-container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping of cards on smaller screens */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+}
+
+/* Book Card */
+.book-card {
+    background: #f9f9f9; /* Light background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%; /* Ensure full width on smaller screens */
+    max-width: 300px; /* Maximum width of each card */
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Space between rows on small screens */
+}
+
+.book-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image Styling */
+.book-card img {
+    width: 100%; /* Full width */
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Title and Price */
+.book-card h3 {
+    font-size: 1.1em; /* Relative font size */
+    margin: 10px 0;
+    color: #333;
+}
+
+.book-card p {
+    font-size: 0.9em; /* Slightly smaller font */
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Buttons Container */
+.book-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px;
+}
+
+/* Buttons */
+.buy-btn,
+.details-btn {
+    flex: 1; /* Flex to distribute buttons evenly */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9em; /* Relative font size */
+}
+
+.buy-btn {
+    background-color: #007bff; /* Blue */
+}
+
+.details-btn {
+    background-color: #28a745; /* Green */
+}
+
+.buy-btn:hover {
+    background-color: #0056b3;
+}
+
+.details-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .book-container {
+        justify-content: center; /* Center content on smaller screens */
+    }
+    .book-card {
+        width: 100%; /* Full width on small screens */
+        max-width: none; /* Remove max-width for full-width cards */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .buy-btn,
+    .details-btn {
+        font-size: 0.8em; /* Adjust button text size */
+        padding: 8px 12px; /* Adjust padding for smaller buttons */
+    }
+    .book-card h3 {
+        font-size: 1em; /* Adjust title size */
+    }
+    .book-card p {
+        font-size: 0.8em; /* Adjust price text size */
+    }
+}
+  
+
+	</style>
+  </head>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Beulah-<span>-Bookshop</span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+	          <li class="nav-item active"><a href="Books.html" class="nav-link">Books</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/blog-mainl.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+          <div class="col-md-9 ftco-animate pb-5">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Books <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread"><p>Check out our best books available now!</p></h1>
+          </div>
+        </div>
+      </div>
+    </section><br> 
+
+	<section class="ftco-section ftco-no-pt bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center">
+          <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+          	<span class="subheading">Our Top Picks</span>
+            <h2 class="mb-2">Best Selling Books</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="carousel-car owl-carousel">
+    					<div class="item">
+    						<div class="book-container" class="menu-items">
+								<div class="book-card" class="menu-item breakfast">
+								  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1" alt="Buttermilk Pancakes">
+								  <h3>The Power of Faith</h3>
+								  <div class="book-buttons">
+									<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+									<button class="details-btn">Details</button>
+								  </div>
+								</div>
+							  </div>
+    					</div>
+						<div class="book-container" class="menu-items">
+							<div class="book-card" class="menu-item breakfast">
+							  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1" alt="Buttermilk Pancakes">
+							  <h3>The Power of Faith</h3>
+							  <div class="book-buttons">
+								<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+								<button class="details-btn">Details</button>
+							  </div>
+							</div>
+						  </div>
+    					<div class="item">
+    						<div class="book-container" class="menu-items">
+								<div class="book-card" class="menu-item breakfast">
+								  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1" alt="Buttermilk Pancakes">
+								  <h3>The Power of Faith</h3>
+								  <div class="book-buttons">
+									<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+									<button class="details-btn">Details</button>
+								  </div>
+								</div>
+							  </div>
+    					</div>
+						<div class="book-container" class="menu-items">
+						<div class="book-card" class="menu-item shakes">
+							<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2" alt="Godzilla Milkshake">
+							<h3>Winning the Battle for Sexual Purity</h3>
+							<div class="book-buttons">
+							  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							  <button class="details-btn">Details</button>
+							</div>
+						  </div>
+						</div>
+						<div class="item">
+    						<div class="book-container" class="menu-items">
+								<div class="book-card" class="menu-item breakfast">
+								  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1" alt="Buttermilk Pancakes">
+								  <h3>The Power of Faith</h3>
+								  <div class="book-buttons">
+									<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+									<button class="details-btn">Details</button>
+								  </div>
+								</div>
+							  </div>
+    					</div>
+						<div class="book-container" class="menu-items">
+							<div class="book-card" class="menu-item breakfast">
+							  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1" alt="Buttermilk Pancakes">
+							  <h3>The Power of Faith</h3>
+							  <div class="book-buttons">
+								<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+								<button class="details-btn">Details</button>
+							  </div>
+							</div>
+						  </div>
+						<div class="item">
+    						<div class="book-container" class="menu-items">
+								<div class="book-card" class="menu-item breakfast">
+								  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1" alt="Buttermilk Pancakes">
+								  <h3>The Power of Faith</h3>
+								  <div class="book-buttons">
+									<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+									<button class="details-btn">Details</button>
+								  </div>
+								</div>
+							  </div>
+    					</div>
+						<div class="book-container" class="menu-items">
+							<div class="book-card" class="menu-item shakes">
+								<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2" alt="Godzilla Milkshake">
+								<h3>Winning the Battle for Sexual Purity</h3>
+								<div class="book-buttons">
+								  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+								  <button class="details-btn">Details</button>
+								</div>
+							  </div>
+							</div>
+							<div class="item">
+		    					<div class="book-container" class="menu-items">
+									<div class="book-card" class="menu-item breakfast">
+									  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1" alt="Buttermilk Pancakes">
+									  <h3>The Power of Faith</h3>
+									  <div class="book-buttons">
+										<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+										<button class="details-btn">Details</button>
+									  </div>
+									</div>
+								  </div>
+								  
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+	</section>
+
+	<section class="menu" style="text-align: center;" >
+		<div class="menu-filter">
+		  <button data-category="all" class="filter-btn active" aria-label="Show all menu items">All</button>
+		  <button data-category="shakes" class="filter-btn" aria-label="Show shakes menu items">Secondary School</button>
+		  <button data-category="breakfast" class="filter-btn" aria-label="Show breakfast menu items">Primary School</button>
+		  <button data-category="dinner" class="filter-btn" aria-label="Show dinner menu items">Stationeries</button>
+		  <button data-category="lunch" class="filter-btn" aria-label="Show lunch menu items">Christian Books</button>
+		  <button data-category="brunch" class="filter-btn" aria-label="Show lunch menu items">Literatures</button>
+		  <button data-category="others" class="filter-btn" aria-label="Show dinner menu items">Others</button>
+		</div>
+	</section>
+	
+	<section class="book-section" style="text-align: center; align-items: center; justify-content: center; padding: 20px;">
+		<div class="menu-items" >
+<!-- SECONDARY SCHOOL SECTION -->
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		  <div class="menu-item shakes">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+					<div class="book-buttons">
+					  <button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					  <button class="details-btn">Details</button>
+					</div>
+				  </div>
+				</div>
+		  </div>
+		
+<!-- PRIMARY SCHOOL SECTION-->
+		  <div class="menu-item breakfast" >  
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+		  <div class="menu-item breakfast" >
+			<div class="book-container" >
+				<div class="book-card">
+				  <img src="./images/Books/P_Power_Faith.jpg" alt="Book 1">
+				  <h3>The Power of Faith</h3>
+				  <div class="book-buttons">
+					<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+					<button class="details-btn">Details</button>
+				  </div>
+				</div>
+			  </div>
+		  </div>
+
+
+<!-- STATIONERY SECTION -->
+		  <div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<!-- STATIONERIES -->
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		  <div class="menu-item dinner">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+
+<!-- CHRISTIAN BOOKS -->
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item lunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+
+<!-- Literature Books -->
+		<div class="menu-item brunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu-item brunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item brunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item brunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item brunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item brunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item brunch">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+
+<!-- Others Section -->
+		<div class="menu-item others">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item others">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item others">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item others">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item others">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item others">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-item others">
+			<div class="book-container">
+				<div class="book-card">
+					<img src="./images/Books/P_Sexual_Purity.jpg" alt="Book 2">
+					<h3>Winning the Battle for Sexual Purity</h3>
+						<div class="book-buttons">
+							<button class="buy-btn" onclick="redirectToWhatsApp()">Buy Now</button>
+							<button class="details-btn">Details</button>
+						</div>
+				</div>
+			</div>
+		</div>
+	  </section>
+	</section>	
+
+
+	<section class="ftco-section bg-light" style="padding-bottom: -1000px;">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Sexual_Purity.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Winning the Battle for Sexual Purity</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">Samuel C. Bethel</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1" data-id="1" data-name="Goals: Key to Personal Achievement" data-price="4000">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_25_pillars.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">25 Pillars of Vision</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">Richard Adeboye</span>
+	    						<p class="price ml-auto">N2500 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" onclick="redirectToWhatsApp()"><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="col-md-4">
+    				<div class="car-wrap rounded ftco-animate">
+    					<div class="img rounded d-flex align-items-end" style="background-image: url(images/Books/P_Goals.jpg); width: 100%; height: 300px;">
+    					</div>
+    					<div class="text">
+    						<h2 class="mb-0"><a href="books-single.html">Goals: Key to Personal Achievement</a></h2>
+    						<div class="d-flex mb-3">
+	    						<span class="cat">George Adegboye</span>
+	    						<p class="price ml-auto">N4000 <span>/pc</span></p>
+    						</div>
+    						<p class="d-flex mb-0 d-block" ><a href="#" class="btn btn-primary py-2 mr-1">Buy now</a> <a href="books-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+    					</div>
+    				</div>
+    			</div>
+
+    			
+    		</div>
+    		<div class="row mt-5">
+          <div class="col text-center">
+            <div class="block-27">
+              <ul>
+                <li><a href="#">&lt;</a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+    
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+		  <div class="row mb-5">
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2"><a href="#" class="logo">Beulah-<span>-Bookshop</span></a></h2>
+				<i><p style="font-family: 'Times New Roman', Times, serif;">Books that inspire, stories that stay with you. <br> Discover, read, transform</p></i>
+				<b><p style="font-weight: bold,; font-family: Arial, Helvetica, sans-serif; color: gold;" >Thank you for visiting Beulah Bookshop & Enterprises</p></b>
+				<p></p>
+				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+				  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+				  <li class="ftco-animate"><a href="https://www.facebook.com/faith.olateju"><span class="icon-facebook"></span></a></li>
+				  <li class="ftco-animate"><a href="https://www.instagram.com/faitholateju?igsh=MTdxYnJlaGlmeXlqbw=="><span class="icon-instagram"></span></a></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4 ml-md-5">
+				<h2 class="ftco-heading-2">Information</h2>
+				<ul class="list-unstyled">
+				  <li><a href="#" class="py-2 d-block">About</a></li>
+				  <li><a href="#" class="py-2 d-block">Services</a></li>
+				  <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
+				  <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
+				  <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-md">
+			   <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2">Customer Support</h2>
+				<ul class="list-unstyled">
+				  <li><a href="#" class="py-2 d-block">FAQ</a></li>
+				  <li><a href="#" class="py-2 d-block">Payment Option</a></li>
+				  <li><a href="#" class="py-2 d-block">How it works</a></li>
+				  <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+				</ul>
+			  </div>
+			</div>
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				  <h2 class="ftco-heading-2">Have Questions?</h2>
+				  <div class="block-23 mb-3">
+					<ul>
+					  <li><span class="icon icon-map-marker"></span><span class="text">Orimolade Street, Ijapo Estate, Akure, Ondo State.</span></li>
+					  <li><a href="tel://234 803 231 4796"><span class="icon icon-phone"></span><span class="text">+234 803 231 4796</span></a></li>
+					  <li><a href="mailto:faitholateju07@gmail.com"><span class="icon icon-envelope"></span><span class="text">faitholateju07@gmail.com</span></a></li>
+					</ul>
+				  </div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p>
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Beulah Bookshop <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://johnnywalker08.github.io/Johnnny-Walker-s-Portfolio/" target="_blank">Johnny Walker</a>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script>
+    function redirectToWhatsApp() {
+      // Replace this number with your WhatsApp business number
+      const phoneNumber = "2348032314796";
+      const message = encodeURIComponent(
+        "Hello, I would like to purchase the book 'Winning the Battle for Sexual Purity' priced at ₦4000."
+      );
+      const whatsappUrl = `https://wa.me/${+2348032314796}?text=${message}`;
+      window.open(whatsappUrl, "_blank");
+    }
+  </script>
+
+
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".menu-item");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach(btn => btn.classList.remove("active"));
+      // Add active class to clicked button
+      button.classList.add("active");
+
+      const category = button.getAttribute("data-category");
+
+      // Show/hide items based on category
+      items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // Show all items by default
+  document.querySelector('[data-category="all"]').click();
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".menu-item");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.getAttribute("data-category");
+
+      items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+});document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".menu-item");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const category = button.getAttribute("data-category");
+
+      items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".menu-item");
+  const toggle = document.getElementById("dark-mode-toggle");
+
+  // Show all items by default
+  setTimeout(() => {
+    document.querySelector(".menu-items").classList.add("loaded");
+    document.querySelector('[data-category="all"]').click();
+  }, 500);
+
+  // Filter functionality
+  buttons.forEach(button => {
+    const category = button.getAttribute("data-category");
+    const count = category === "all" 
+      ? items.length 
+      : document.querySelectorAll(`.menu-item.${category}`).length;
+    button.textContent += ` (${count})`;
+
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.classList.add("visible");
+        } else {
+          item.classList.remove("visible");
+        }
+      });
+    });
+  });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector("#menu-section");
+  const buttons = section.querySelectorAll(".filter-btn");
+  const items = section.querySelectorAll(".menu-item");
+  const toggle = document.getElementById("dark-mode-toggle");
+
+  // Show all items by default
+  setTimeout(() => {
+    section.querySelector(".menu-items").classList.add("loaded");
+    section.querySelector('[data-category="all"]').click();
+  }, 500);
+
+  // Filter functionality
+  buttons.forEach(button => {
+    const category = button.getAttribute("data-category");
+    const count = category === "all" 
+      ? items.length 
+      : section.querySelectorAll(`.menu-item.${category}`).length;
+    button.textContent += ` (${count})`;
+
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.classList.add("visible");
+        } else {
+          item.classList.remove("visible");
+        }
+      });
+    });
+  });
+
+  // Dark mode toggle
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+});
+
+
+  // Dark mode toggle
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+});
+
+
+
+	
+	
+	</script>
+	
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+  
+    
+  </body>
+</html>

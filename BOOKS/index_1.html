@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="menu">
+    <h1>Our Menu</h1>
+    <p>Explore our delicious options for every meal of the day!</p>
+    <div class="menu-filter">
+      <button data-category="all" class="filter-btn active">All</button>
+      <button data-category="breakfast" class="filter-btn">Breakfast</button>
+      <button data-category="lunch" class="filter-btn">Lunch</button>
+      <button data-category="shakes" class="filter-btn">Shakes</button>
+      <button data-category="dinner" class="filter-btn">Dinner</button>
+    </div>
+    <div class="menu-items">
+      <div class="menu-item breakfast">
+        <img src="images/pancakes.jpg" alt="Buttermilk Pancakes">
+        <h3>Buttermilk Pancakes</h3>
+        <p>$15.99</p>
+      </div>
+      <div class="menu-item shakes">
+        <img src="images/milkshake.jpg" alt="Godzilla Milkshake">
+        <h3>Godzilla Milkshake</h3>
+        <p>$6.99</p>
+      </div>
+      <div class="menu-item lunch">
+        <img src="images/burger.jpg" alt="Diner Double">
+        <h3>Diner Double</h3>
+        <p>$13.99</p>
+      </div>
+      <div class="menu-item dinner">
+        <img src="images/dinner.jpg" alt="Country Delight">
+        <h3>Country Delight</h3>
+        <p>$20.99</p>
+      </div>
+      <div class="menu-item breakfast">
+        <img src="images/egg.jpg" alt="Egg Attack">
+        <h3>Egg Attack</h3>
+        <p>$22.99</p>
+      </div>
+      <div class="menu-item shakes">
+        <img src="images/oreo.jpg" alt="Oreo Dream">
+        <h3>Oreo Dream</h3>
+        <p>$18.99</p>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+---
+
+<style>
+    /* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #444;
+}
+
+p {
+  margin-top: -10px;
+  color: #777;
+}
+
+/* Menu Filter Buttons */
+.menu-filter {
+  margin: 20px 0;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 2px solid #ffa500;
+  background: transparent;
+  color: #ffa500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+/* Menu Items */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.menu-item {
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  display: none; /* Hidden by default */
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.menu-item p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-item {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+</style>
+
+
+
+
+---
+
+JavaScript (script.js)
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const items = document.querySelectorAll(".menu-item");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      buttons.forEach(btn => btn.classList.remove("active"));
+      // Add active class to clicked button
+      button.classList.add("active");
+
+      const category = button.getAttribute("data-category");
+
+      // Show/hide items based on category
+      items.forEach(item => {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+
+  // Show all items by default
+  document.querySelector('[data-category="all"]').click();
+});
+
+</script>
+
+
+
+
+---
